@@ -159,7 +159,7 @@ NAME_HEADER =	$(SRC_DIR_LIB)/my.h
 
 
 
-all: compil_lib copy_headers move_libmy
+all: compil_lib copy_headers move_lib
 
 compil_lib:		$(OBJ_LIBRARY)
 	@echo -e "${GREEN}[CREATE] ${WHITE}Creating ${BLUE}${NAME_LIB}${WHITE}...${NC}"
@@ -170,7 +170,7 @@ copy_headers:
 	@cp $(NAME_HEADER) ../../include
 
 
-move_libmy:
+move_lib:
 	@mv $(NAME_LIB) ../..
 
 debug:

@@ -10,6 +10,7 @@
 int my_intlen(int nb)
 {
     int i = 0;
+
     if (nb < 0)
         nb *= -1;
     else if (nb == 0)
